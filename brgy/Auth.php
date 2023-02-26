@@ -9,6 +9,5 @@ if(strpos($link,'Login_verification.php') && !isset($_SESSION['otp_verify_user_i
     echo "<script>location.replace('./Login.php');</script>";
 }
 if(strpos($link,'Login.php') > -1 && isset($_SESSION['user_login'])){
-echo "<script>location.replace('./');</script>";
-    
+echo "<script>location.replace('./');</script>";   
 }
