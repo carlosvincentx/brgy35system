@@ -1,0 +1,14 @@
+CREATE TABLE brgyofficials (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    position VARCHAR (100) NOT NULL,
+    name VARCHAR (100) NOT NULL UNIQUE,
+    contact VARCHAR(20) NULL UNIQUE,
+    address VARCHAR(200) NULL,
+    date_employment VARCHAR(200) NULL,  
+    date_registered DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+INSERT INTO brgyofficials (position, name, contact, address, date_employment)
+VALUES
+('Kagawad', 'Jose Rizal', '09352445887', '379-C Madrid Lakandula St. Tondo, Manila', '2022-01-09')
